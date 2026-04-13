@@ -107,7 +107,7 @@ export default async function ServicesPage() {
                     )}
                     {(card.buttonText || card.buttonLink) && (
                       <a 
-                        href={`https://wa.me/5571987203121?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para ${card.title}.`)}`}
+                        href={`https://wa.me/5571987203123?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para ${card.title}.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-background-dark transition-all rounded font-medium font-display uppercase text-sm tracking-wider mt-4 inline-block shadow-lg shadow-primary/5"
@@ -186,7 +186,7 @@ export default async function ServicesPage() {
             <p className="text-background-dark/80 text-lg">{content.cta?.text || "Nossos especialistas estão à disposição para realizar um diagnóstico inicial sem compromisso."}</p>
           </div>
           <a 
-            href={`https://wa.me/5571987203121?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria técnica com a Santa Marta.')}`}
+            href={`https://wa.me/5571987203123?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria técnica com a Santa Marta.')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-background-dark text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-background-dark/90 transition-all shadow-xl font-display uppercase tracking-wide inline-block"

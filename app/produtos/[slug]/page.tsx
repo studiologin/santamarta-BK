@@ -107,7 +107,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             <div className="flex flex-col gap-4">
               <a
-                href={`https://wa.me/5571987203121?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para o produto: ${product.name}`)}`}
+                href={`https://wa.me/5571987203123?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para o produto: ${product.name}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-primary hover:bg-primary/90 text-[#07121d] py-5 rounded font-bold text-lg transition-all shadow-xl shadow-primary/10 uppercase tracking-widest font-display text-center block"

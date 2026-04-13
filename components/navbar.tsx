@@ -64,7 +64,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link
-            href={`https://wa.me/5571987203121?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre as soluções da Santa Marta.')}`}
+            href={`https://wa.me/5571987203123?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre as soluções da Santa Marta.')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="relative hidden md:flex items-center gap-2 px-6 py-2.5 bg-transparent border border-white/10 rounded-md text-white font-bold text-[11px] uppercase tracking-[0.2em] transition-all duration-300 overflow-hidden group hover:border-[#25D366]/50 hover:shadow-[0_0_20px_rgba(37,211,102,0.15)]"
@@ -173,7 +173,7 @@ export function Navbar() {
             }}
           >
             <Link
-              href={`https://wa.me/5571987203121?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre as soluções da Santa Marta.')}`}
+              href={`https://wa.me/5571987203123?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre as soluções da Santa Marta.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-full overflow-hidden bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/20 text-white px-6 py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.15em] flex items-center justify-between transition-all duration-300 group shadow-[0_0_20px_rgba(37,211,102,0.1)] hover:shadow-[0_0_30px_rgba(37,211,102,0.2)]"

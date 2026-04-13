@@ -1,11 +1,11 @@
 
 export const companyInfo = {
   name: "Santa Marta",
-  phone: "(71) 98720-3121",
+  phone: "(71) 98720-3123",
   email: "vendas@santamartageo.com.br",
   address: "Salvador, BA", // Placeholder
   workingHours: "Seg a Sex - 08h às 17h",
-  whatsappLink: "https://wa.me/5571987203121", // Example link
+  whatsappLink: "https://wa.me/5571987203123", // Example link
   socials: {
     instagram: "#",
     linkedin: "#",
