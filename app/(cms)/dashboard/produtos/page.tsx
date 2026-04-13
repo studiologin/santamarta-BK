@@ -82,6 +82,13 @@ export default function ProductsListPage() {
         }
     };
 
+    const sortedProducts = (products || []).sort((a, b) => {
+        if (a.is_active === b.is_active) {
+            return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+        }
+        return a.is_active ? -1 : 1;
+    });
+
     return (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 h-full max-h-full flex flex-col relative">
             {/* Cabeçalho da Seção */}
@@ -122,13 +129,13 @@ export default function ProductsListPage() {
                             <div className="w-10 h-10 border-4 border-[#cba36d]/20 border-t-[#cba36d] rounded-full animate-spin mx-auto"></div>
                             <p className="mt-4 text-slate-500 font-bold text-xs uppercase tracking-widest">Carregando catálogo...</p>
                         </div>
-                    ) : products.length === 0 ? (
+                    ) : sortedProducts.length === 0 ? (
                         <div className="p-10 py-32 text-center">
                             <div className="material-symbols-outlined text-[#cba36d]/20 text-6xl mb-4">inventory_2</div>
                             <p className="text-slate-500 font-medium italic">Nenhum produto cadastrado nesta categoria.</p>
                         </div>
                     ) : (
-                        products.map((product) => (
+                        sortedProducts.map((product) => (
                             <div key={product.id} className="flex flex-col lg:grid lg:grid-cols-[2fr_1.5fr_1fr_1.5fr_auto] lg:items-center gap-4 lg:gap-4 p-4 lg:px-10 lg:py-3 bg-[#050b14]/50 lg:bg-transparent rounded-2xl lg:rounded-none mb-3 lg:mb-0 border border-white/5 lg:border-none hover:bg-white/[0.02] transition-colors group">
                                 {/* Informações do Produto */}
                                 <div className="flex items-center gap-4 lg:gap-5 min-w-0">
