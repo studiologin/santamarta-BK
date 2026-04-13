@@ -13,6 +13,7 @@ export default function ProductsListPage() {
 
     const [products, setProducts] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [searchQuery, setSearchQuery] = useState("");
 
     const fetchProducts = useCallback(async () => {
         setLoading(true);
@@ -82,7 +83,9 @@ export default function ProductsListPage() {
         }
     };
 
-    const sortedProducts = (products || []).sort((a, b) => {
+    const filteredProducts = (products || []).filter(product => 
+        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+    ).sort((a, b) => {
         if (a.is_active === b.is_active) {
             return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
         }
@@ -103,13 +106,36 @@ export default function ProductsListPage() {
                         </h1>
                         <div className="h-1 w-16 bg-gradient-to-r from-[#cba36d] to-transparent rounded-full"></div>
                     </div>
-                    <Link
-                        href={`/dashboard/produtos/novo?categoria=${currentCategory || 'geossinteticos'}`}
-                        className="bg-[#cba36d] text-[#0d1b2a] px-8 py-4 rounded-xl font-black text-[11px] uppercase tracking-[0.2em] hover:bg-[#b8925c] transition-all shadow-xl shadow-[#cba36d]/10 flex items-center gap-3 active:scale-95 shrink-0"
-                    >
-                        <span className="material-symbols-outlined font-bold text-lg">add</span>
-                        Novo Produto
-                    </Link>
+
+                    <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4 w-full md:w-auto">
+                        {/* Barra de Pesquisa */}
+                        <div className="relative group min-w-[300px]">
+                            <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-[#cba36d] transition-colors text-xl">search</span>
+                            <input 
+                                type="text"
+                                placeholder="Pesquisar produto..."
+                                className="w-full bg-[#0d1b2a] border border-white/5 rounded-xl pl-12 pr-4 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-[#cba36d]/50 transition-all font-medium text-sm"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                            {searchQuery && (
+                                <button 
+                                    onClick={() => setSearchQuery("")}
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors"
+                                >
+                                    <span className="material-symbols-outlined text-sm">close</span>
+                                </button>
+                            )}
+                        </div>
+
+                        <Link
+                            href={`/dashboard/produtos/novo?categoria=${currentCategory || 'geossinteticos'}`}
+                            className="bg-[#cba36d] text-[#0d1b2a] px-8 py-4 rounded-xl font-black text-[11px] uppercase tracking-[0.2em] hover:bg-[#b8925c] transition-all shadow-xl shadow-[#cba36d]/10 flex items-center justify-center gap-3 active:scale-95 shrink-0"
+                        >
+                            <span className="material-symbols-outlined font-bold text-lg">add</span>
+                            Novo Produto
+                        </Link>
+                    </div>
                 </div>
             </div>
 
@@ -129,13 +155,13 @@ export default function ProductsListPage() {
                             <div className="w-10 h-10 border-4 border-[#cba36d]/20 border-t-[#cba36d] rounded-full animate-spin mx-auto"></div>
                             <p className="mt-4 text-slate-500 font-bold text-xs uppercase tracking-widest">Carregando catálogo...</p>
                         </div>
-                    ) : sortedProducts.length === 0 ? (
+                    ) : filteredProducts.length === 0 ? (
                         <div className="p-10 py-32 text-center">
-                            <div className="material-symbols-outlined text-[#cba36d]/20 text-6xl mb-4">inventory_2</div>
-                            <p className="text-slate-500 font-medium italic">Nenhum produto cadastrado nesta categoria.</p>
+                            <div className="material-symbols-outlined text-[#cba36d]/20 text-6xl mb-4">search_off</div>
+                            <p className="text-slate-500 font-medium italic">Nenhum produto encontrado na pesquisa.</p>
                         </div>
                     ) : (
-                        sortedProducts.map((product) => (
+                        filteredProducts.map((product) => (
                             <div key={product.id} className="flex flex-col lg:grid lg:grid-cols-[2fr_1.5fr_1fr_1.5fr_auto] lg:items-center gap-4 lg:gap-4 p-4 lg:px-10 lg:py-3 bg-[#050b14]/50 lg:bg-transparent rounded-2xl lg:rounded-none mb-3 lg:mb-0 border border-white/5 lg:border-none hover:bg-white/[0.02] transition-colors group">
                                 {/* Informações do Produto */}
                                 <div className="flex items-center gap-4 lg:gap-5 min-w-0">
