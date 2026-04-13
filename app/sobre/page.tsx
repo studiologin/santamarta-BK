@@ -58,17 +58,18 @@ export default async function AboutPage() {
               <h2 className="text-3xl font-bold uppercase tracking-tight font-industrial text-white">Um Legado de 40 Anos</h2>
             </div>
 
-            {content.history_text ? (
-              <div
-                className="prose prose-invert prose-lg max-w-none prose-p:text-slate-400 prose-p:leading-relaxed prose-a:text-primary prose-headings:text-white prose-strong:text-white"
-                dangerouslySetInnerHTML={{ __html: content.history_text }}
-              />
-            ) : (
-              <>
-                <p className="text-lg text-slate-400 leading-relaxed">Qualidade que protege hoje. Confiança que permanece no futuro.</p>
-                <p className="text-lg text-slate-400 leading-relaxed">Com uma história de excelência consolidada desde 1986, a Santa Marta nasceu com o propósito de transformar o setor industrial através da segurança e inovação técnica de ponta. Nossa trajetória de quase 40 anos é marcada pela busca incessante por soluções que impulsionam o progresso nacional.</p>
-              </>
-            )}
+            <div className="prose prose-invert prose-lg max-w-none prose-p:text-slate-400 prose-p:leading-relaxed prose-a:text-primary prose-headings:text-white prose-strong:text-white">
+              <p className="text-xl font-bold text-primary mb-6">Qualidade que protege hoje. Confiança que permanece no futuro.</p>
+              
+              {content.history_text ? (
+                <div dangerouslySetInnerHTML={{ __html: content.history_text.replace('<p>Acreditamos em qualidade e longo prazo...</p>', '') }} />
+              ) : (
+                <>
+                  <p>Com uma história de excelência consolidada desde 1986, a Santa Marta nasceu com o propósito de transformar o setor industrial através da segurança e inovação técnica de ponta. Nossa trajetória de quase 40 anos é marcada pela busca incessante por soluções que impulsionam o progresso nacional.</p>
+                  <p>Desde nossa fundação, temos sido parceiros estratégicos das maiores indústrias do país. O que começou como uma visão de rigor técnico expandiu-se para um legado de solidez, mantendo a transparência e a ética como pilares fundamentais de cada projeto executado.</p>
+                </>
+              )}
+            </div>
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-slate-800">
               <div>
                 <span className="block text-4xl font-black text-primary mb-1">40+</span>
