@@ -106,11 +106,14 @@ export default async function ServicesPage() {
                       </ul>
                     )}
                     {(card.buttonText || card.buttonLink) && (
-                      <Link href={card.buttonLink || "#"}>
-                        <button className="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-background-dark transition-all rounded font-medium font-display uppercase text-sm tracking-wider mt-4">
-                          {card.buttonText || "Acessar"}
-                        </button>
-                      </Link>
+                      <a 
+                        href={`https://wa.me/5571987203121?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para ${card.title}.`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-background-dark transition-all rounded font-medium font-display uppercase text-sm tracking-wider mt-4 inline-block shadow-lg shadow-primary/5"
+                      >
+                        {card.buttonText || "Solicitar Orçamento"}
+                      </a>
                     )}
                   </div>
                   <div className="flex-1 w-full h-72 lg:h-96 rounded-lg overflow-hidden shadow-2xl relative border border-slate-800 flex items-center justify-center bg-black/20">
@@ -182,11 +185,14 @@ export default async function ServicesPage() {
             <h3 className="text-3xl font-bold text-background-dark mb-4 font-display">{content.cta?.title || "Pronto para elevar o nível de segurança da sua planta?"}</h3>
             <p className="text-background-dark/80 text-lg">{content.cta?.text || "Nossos especialistas estão à disposição para realizar um diagnóstico inicial sem compromisso."}</p>
           </div>
-          <Link href={content.cta?.buttonLink || "/contato"}>
-            <button className="bg-background-dark text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-background-dark/90 transition-all shadow-xl font-display uppercase tracking-wide">
-              {content.cta?.buttonText || "Agendar Consultoria"}
-            </button>
-          </Link>
+          <a 
+            href={`https://wa.me/5571987203121?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria técnica com a Santa Marta.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-background-dark text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-background-dark/90 transition-all shadow-xl font-display uppercase tracking-wide inline-block"
+          >
+            {content.cta?.buttonText || "Agendar Consultoria"}
+          </a>
         </section>
       </main>
     </div>

@@ -104,9 +104,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
 
             <div className="flex flex-col gap-4">
-              <button className="w-full bg-primary hover:bg-primary/90 text-[#07121d] py-5 rounded font-bold text-lg transition-all shadow-xl shadow-primary/10 uppercase tracking-widest font-display">
+              <a
+                href={`https://wa.me/5571987203121?text=${encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para o produto: ${product.name}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-primary hover:bg-primary/90 text-[#07121d] py-5 rounded font-bold text-lg transition-all shadow-xl shadow-primary/10 uppercase tracking-widest font-display text-center block"
+              >
                 Solicitar Orçamento
-              </button>
+              </a>
               <button className="w-full bg-transparent border border-white/20 hover:border-primary/50 text-slate-200 py-4 rounded font-medium text-sm transition-all flex items-center justify-center gap-2">
                 <span className="material-symbols-outlined text-sm">download</span>
                 Baixar Catálogo Técnico (PDF)

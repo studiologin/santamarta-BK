@@ -74,10 +74,15 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               </ul>
             </div>
             <div className="mt-12">
-              <Link href="/contato" className="inline-flex items-center gap-3 bg-[#CCA672] text-[#0A192A] px-10 py-5 rounded-lg font-bold uppercase tracking-widest hover:bg-white transition-all font-fahkwang text-lg shadow-[0_0_30px_rgba(204,166,114,0.2)]">
+              <a
+                href={`https://wa.me/5571987203121?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre o serviço: ${service.title}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#CCA672] text-[#0A192A] px-10 py-5 rounded-lg font-bold uppercase tracking-widest hover:bg-white transition-all font-industrial text-lg shadow-[0_0_30px_rgba(204,166,114,0.2)]"
+              >
                 Solicitar Orçamento
                 <span className="material-symbols-outlined">arrow_forward</span>
-              </Link>
+              </a>
             </div>
           </div>
 
