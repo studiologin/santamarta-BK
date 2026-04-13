@@ -97,19 +97,15 @@ export default async function ContactPage() {
 
 
 
-            {/* Map Placeholder */}
-            <div className="rounded-xl overflow-hidden grayscale contrast-125 opacity-70 hover:opacity-100 transition-opacity h-64 relative bg-primary/5 border border-primary/20">
+            {/* Contact Image Section */}
+            <div className="rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 h-64 relative border border-primary/20 group">
               <Image
-                src="https://picsum.photos/seed/map-location/800/600"
-                alt="Stylized map showing business location"
+                src="/images/contact-bg.png"
+                alt="Equipe de atendimento Santa Marta Engenharia"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="bg-primary text-background-dark p-2 rounded-full shadow-xl z-10">
-                  <span className="material-symbols-outlined text-3xl">location_on</span>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
             </div>
           </div>
 
