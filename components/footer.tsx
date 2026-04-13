@@ -27,7 +27,7 @@ export function Footer() {
             />
           </div>
           <p className="text-slate-500 text-sm leading-relaxed">
-            Referência em geossintéticos e engenharia industrial desde 1986. Qualidade técnica e compromisso ambiental em cada projeto.
+            Referência em Geossintéticos e Engenharia de Segurança do Trabalho desde 1986. Qualidade técnica e compromisso com a segurança em cada projeto.
           </p>
           <div className="flex justify-center md:justify-start gap-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all">
