@@ -95,25 +95,7 @@ export default async function ContactPage() {
               </div>
             </div>
 
-            {/* Locations */}
-            <div className="pt-8 border-t border-primary/20">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-primary font-bold mb-4 uppercase text-xs tracking-widest font-display">Unidade Matriz</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed whitespace-pre-line">
-                    {content.address || `Av. Tancredo Neves, 1632\nEd. Salvador Trade Center\nCaminho das Árvores, Salvador - BA`}
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-primary font-bold mb-4 uppercase text-xs tracking-widest font-display">Unidade Recife</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
-                    Av. Eng. Domingos Ferreira, 2391<br />
-                    Ed. Empresarial Graham Bell<br />
-                    Boa Viagem, Recife - PE
-                  </p>
-                </div>
-              </div>
-            </div>
+
 
             {/* Map Placeholder */}
             <div className="rounded-xl overflow-hidden grayscale contrast-125 opacity-70 hover:opacity-100 transition-opacity h-64 relative bg-primary/5 border border-primary/20">
