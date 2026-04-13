@@ -12,7 +12,7 @@ export default async function AboutPage() {
     <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] flex flex-col justify-center text-center overflow-hidden">
+      <section className="relative min-h-[80vh] py-32 flex flex-col justify-center text-center overflow-hidden">
         <div className="absolute inset-0 z-0 scale-105">
           <Image
             alt="Industrial refinery facility"
@@ -43,9 +43,28 @@ export default async function AboutPage() {
               )}
             </h1>
             <div className="h-1 w-24 bg-primary mb-10"></div>
-            <p className="text-xl md:text-2xl text-slate-300 max-w-4xl font-light leading-relaxed drop-shadow">
-              Quatro décadas de excelência, forjando o futuro da infraestrutura industrial com segurança, precisão técnica e compromisso ambiental.
+            
+            <p className="text-xl md:text-2xl text-slate-300 max-w-4xl font-light leading-relaxed drop-shadow mb-12">
+              Quatro décadas entregando soluções em proteção coletiva e geossintéticos, com engenharia aplicada, segurança e foco no que realmente importa: as pessoas.
             </p>
+
+            <div className="max-w-3xl space-y-6 text-lg text-slate-400 font-light leading-relaxed">
+              <p>
+                Aqui valorizamos o trabalho em equipe, o sucesso do cliente, a ética e a melhoria contínua. Somos uma equipe e promovemos a busca constante por novas ideias que nos ajudem a perseguir o crescimento através da melhoria contínua.
+              </p>
+              <p>
+                Colocamos nossos clientes no centro de tudo o que fazemos, pois só entendendo a real necessidade particular de cada um deles seremos capazes de entregar uma solução rápida e adequada, agindo com integridade e buscando sempre a excelência.
+              </p>
+              <p>
+                Estamos comprometidos em evoluir e aprimorar continuamente, impulsionados pelos nossos valores.
+              </p>
+              <p className="text-primary font-bold italic py-4">
+                "Nunca vai ser ótimo antes de ser frequente."
+              </p>
+              <p className="text-white font-bold text-xl font-industrial uppercase tracking-widest pt-4">
+                Sejam bem-vindos!
+              </p>
+            </div>
           </div>
         </div>
       </section>
