@@ -205,27 +205,59 @@ export default async function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold font-industrial uppercase tracking-tight text-white">Diferenciais Competitivos</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-y-16 gap-x-12">
+            {/* 1. Expertise Técnica */}
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
                 <span className="material-symbols-outlined text-4xl">engineering</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white">Expertise Técnica</h4>
-              <p className="text-slate-400">Corpo de engenharia especializado em soluções de alta complexidade e infraestrutura crítica.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Expertise Técnica</h4>
+              <p className="text-slate-400">Somos especialistas no que fazemos</p>
             </div>
+
+            {/* 2. Qualidade Certificada */}
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
                 <span className="material-symbols-outlined text-4xl">verified</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white">Qualidade Certificada</h4>
-              <p className="text-slate-400">Processos rigorosos que atendem às normas internacionais de segurança e sustentabilidade ambiental.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Qualidade Certificada</h4>
+              <p className="text-slate-400">Projetos e materiais fornecidos em conformidade com normas nacionais e internacionais de segurança.</p>
             </div>
+
+            {/* 3. Localização */}
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">business</span>
+                <span className="material-symbols-outlined text-4xl">explore</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white">Foco Total B2B</h4>
-              <p className="text-slate-400">Atendimento personalizado para grandes indústrias, garantindo pontualidade e excelência operacional.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Localização</h4>
+              <p className="text-slate-400">Estamos perto de você</p>
+            </div>
+
+            {/* 4. Pronta Entrega */}
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
+                <span className="material-symbols-outlined text-4xl">local_shipping</span>
+              </div>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Pronta Entrega</h4>
+              <p className="text-slate-400">Material para pronta entrega!</p>
+            </div>
+
+            {/* 5. Segurança */}
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
+                <span className="material-symbols-outlined text-4xl">health_and_safety</span>
+              </div>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Segurança</h4>
+              <p className="text-slate-400">Segurança levada a sério e em primeiro lugar.</p>
+            </div>
+
+            {/* 6. Foco na solução */}
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
+                <span className="material-symbols-outlined text-4xl">handyman</span>
+              </div>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Foco na solução</h4>
+              <p className="text-slate-400">Ao seu lado do projeto a execução.</p>
             </div>
           </div>
         </div>
