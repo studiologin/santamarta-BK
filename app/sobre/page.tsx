@@ -271,26 +271,6 @@ export default async function AboutPage() {
               <p className="text-lg text-slate-400 mb-10 leading-relaxed">
                 Com matriz em Salvador e filial em Recife, nossa atuação se expande por todo o Nordeste, garantindo uma cobertura ágil e eficiente para os principais polos industriais da região.
               </p>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="mt-1 text-primary">
-                    <span className="material-symbols-outlined">location_on</span>
-                  </div>
-                  <div>
-                    <h5 className="text-xl font-bold font-industrial text-white">Matriz Salvador</h5>
-                    <p className="text-slate-500">Coração de nossas operações administrativas e logística técnica.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="mt-1 text-primary">
-                    <span className="material-symbols-outlined">location_on</span>
-                  </div>
-                  <div>
-                    <h5 className="text-xl font-bold font-industrial text-white">Filial Recife</h5>
-                    <p className="text-slate-500">Hub estratégico para atendimento aos polos industriais de Pernambuco.</p>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="rounded-xl overflow-hidden relative border border-primary/20 bg-background-light/5 flex items-center justify-center min-h-[400px] lg:min-h-[480px]">
               <BrazilMap />
