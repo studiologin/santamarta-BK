@@ -79,14 +79,14 @@ export default function Home() {
                 <span className="material-symbols-outlined text-primary">engineering</span>
                 <h5 className="text-white font-bold uppercase tracking-widest text-sm">Consultoria Especializada</h5>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed font-light">Desenvolvimento de projetos executivos com rigor técnico e foco na otimização de custos e recursos para grandes obras de infraestrutura.</p>
+              <p className="text-slate-400 text-sm leading-relaxed font-light">Desenvolvimento de projetos de segurança do trabalho com rigor técnico e foco na segurança do canteiro de obra, sua vizinhança e seus trabalhadores</p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary">layers</span>
-                <h5 className="text-white font-bold uppercase tracking-widest text-sm">Materiais Premium</h5>
+                <h5 className="text-white font-bold uppercase tracking-widest text-sm">MATERIAIS NORMATIZADOS</h5>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed font-light">Distribuição estratégica de geossintéticos de alta performance, garantindo a integridade ambiental e estrutural de cada aplicação.</p>
+              <p className="text-slate-400 text-sm leading-relaxed font-light">Fornecimento de materiais que seguem as normas nacionais e internacionais.</p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
