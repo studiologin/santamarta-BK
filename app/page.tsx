@@ -116,7 +116,7 @@ export default function Home() {
             <span className="material-symbols-outlined text-5xl text-primary/50 group-hover:text-primary transition-colors">apartment</span>
             <h4 className="text-2xl font-bold text-white uppercase tracking-tight font-industrial">Construção Civil</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Soluções integradas para o setor construtivo, desde reforço de solos até sistemas de drenagem predial, unindo tecnologia industrial à agilidade exigida pelo mercado civil.
+              Soluções integradas em sistemas de proteções coletivas e individuais
             </p>
             <div className="pt-4 flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
               <Link href="/construcao-civil" className="flex items-center gap-2">
@@ -129,7 +129,7 @@ export default function Home() {
             <span className="material-symbols-outlined text-5xl text-primary/50 group-hover:text-primary transition-colors">grid_view</span>
             <h4 className="text-2xl font-bold text-white uppercase tracking-tight font-industrial">Geossintéticos</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Linha completa de geomembranas, geotêxteis e geogrelhas. Referência técnica em impermeabilização e contenção para proteção ambiental e obras de terra.
+              Linha completa geossintéticos e materiais para drenagem e elétrica. 
             </p>
             <div className="pt-4 flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
               <Link href="/geossinteticos" className="flex items-center gap-2">
