@@ -86,7 +86,7 @@ export default async function AboutPage() {
               <Image
                 alt="Legado Santa Marta"
                 className="object-cover"
-                src="/images/legado.png"
+                src="/images/legado.JPG"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
