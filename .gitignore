@@ -1,0 +1,17 @@
+node_modules/
+.next/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+.vercel
+.env*.local
+
+# Build artifacts
+deploy.zip
+build_output.txt
+dist/
+out/
+zip_test/
