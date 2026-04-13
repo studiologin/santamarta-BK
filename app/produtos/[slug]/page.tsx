@@ -67,10 +67,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="lg:col-span-7">
             <ProductGallery
               productName={product.name}
-              images={[
+              images={Array.from(new Set([
                 product.image_url,
                 ...(Array.isArray(product.gallery_urls) ? product.gallery_urls : [])
-              ].filter(Boolean) as string[]}
+              ].filter(Boolean) as string[]))}
             />
           </div>
 
@@ -125,7 +125,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <section className="border-t border-white/10 pt-20 mb-24 max-w-7xl mx-auto px-4 md:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           {/* Specs Table */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <h3 className="text-2xl font-bold text-white mb-8 border-l-4 border-primary pl-4 uppercase tracking-wider font-display">Ficha Técnica</h3>
 
             {product.technical_sheet && (Array.isArray(product.technical_sheet) ? product.technical_sheet.length > 0 : Object.keys(product.technical_sheet).length > 0) ? (
@@ -158,34 +158,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 Nenhuma ficha técnica especificada para este produto.
               </div>
             )}
-          </div>
-
-          {/* Model Grid */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-8 border-l-4 border-primary pl-4 uppercase tracking-wider font-display">Modelos</h3>
-            <div className="grid grid-cols-1 gap-4">
-              <div className="bg-[#162a3f] border border-white/10 p-5 rounded-lg flex justify-between items-center group hover:border-primary transition-all cursor-pointer">
-                <div>
-                  <p className="text-white font-bold">Standard 1.0</p>
-                  <p className="text-slate-400 text-xs">Uso geral</p>
-                </div>
-                <span className="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors">arrow_forward</span>
-              </div>
-              <div className="bg-[#162a3f] border border-white/10 p-5 rounded-lg flex justify-between items-center group hover:border-primary transition-all cursor-pointer">
-                <div>
-                  <p className="text-white font-bold">Premium 2.0</p>
-                  <p className="text-slate-400 text-xs">Alta resistência</p>
-                </div>
-                <span className="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors">arrow_forward</span>
-              </div>
-              <div className="bg-[#162a3f] border border-white/10 p-5 rounded-lg flex justify-between items-center group hover:border-primary transition-all cursor-pointer">
-                <div>
-                  <p className="text-white font-bold">Reinforced 3.0</p>
-                  <p className="text-slate-400 text-xs">Aplicações críticas</p>
-                </div>
-                <span className="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors">arrow_forward</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
