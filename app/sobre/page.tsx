@@ -268,8 +268,11 @@ export default async function AboutPage() {
           <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 font-industrial text-white">Presença Estratégica</h2>
-              <p className="text-lg text-slate-400 mb-10 leading-relaxed">
+              <p className="text-lg text-slate-400 mb-6 leading-relaxed">
                 Com matriz em Salvador e filial em Recife, nossa atuação se expande por todo o Nordeste, garantindo uma cobertura ágil e eficiente para os principais polos industriais da região.
+              </p>
+              <p className="text-lg text-primary font-bold uppercase tracking-wider">
+                Nosso foco de atuação é a indústria da construção civil.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden relative border border-primary/20 bg-background-light/5 flex items-center justify-center min-h-[400px] lg:min-h-[480px]">
