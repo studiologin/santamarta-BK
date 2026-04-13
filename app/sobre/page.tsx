@@ -84,9 +84,9 @@ export default async function AboutPage() {
           <div className="relative">
             <div className="aspect-square rounded-xl overflow-hidden border border-primary/20 shadow-2xl relative">
               <Image
-                alt="Industrial complex at night"
+                alt="Legado Santa Marta"
                 className="object-cover"
-                src="https://picsum.photos/seed/industrial-complex/800/800"
+                src="/images/legado.png"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
