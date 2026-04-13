@@ -65,8 +65,8 @@ export default async function AboutPage() {
               />
             ) : (
               <>
+                <p className="text-lg text-slate-400 leading-relaxed">Qualidade que protege hoje. Confiança que permanece no futuro.</p>
                 <p className="text-lg text-slate-400 leading-relaxed">Com uma história de excelência consolidada desde 1986, a Santa Marta nasceu com o propósito de transformar o setor industrial através da segurança e inovação técnica de ponta. Nossa trajetória de quase 40 anos é marcada pela busca incessante por soluções que impulsionam o progresso nacional.</p>
-                <p className="text-lg text-slate-400 leading-relaxed">Desde nossa fundação, temos sido parceiros estratégicos das maiores indústrias do país. O que começou como uma visão de rigor técnico expandiu-se para um legado de solidez, mantendo a transparência e a ética como pilares fundamentais de cada projeto executado.</p>
               </>
             )}
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-slate-800">
@@ -75,8 +75,8 @@ export default async function AboutPage() {
                 <span className="text-sm uppercase tracking-widest font-medium text-slate-500">Anos de Experiência</span>
               </div>
               <div>
-                <span className="block text-4xl font-black text-primary mb-1">500+</span>
-                <span className="text-sm uppercase tracking-widest font-medium text-slate-500">Projetos Entregues</span>
+                <span className="block text-4xl font-black text-primary mb-1">+20.000</span>
+                <span className="text-sm uppercase tracking-widest font-medium text-slate-500">obras atendidas</span>
               </div>
             </div>
           </div>

@@ -43,7 +43,7 @@ async function runMigration() {
     CREATE POLICY "Edicao autonoma" ON public.pages FOR UPDATE USING (auth.role() = 'authenticated');
     
     INSERT INTO public.pages (slug, name, content) VALUES
-    ('sobre', 'Sobre', '{"hero_title": "A MAIOR DISTRIBUIDORA DE GEOSSINTÉTICOS DO BRASIL", "history_text": "<p>Acreditamos em qualidade e longo prazo...</p>", "image_1":"", "image_2":""}'::jsonb),
+    ('sobre', 'Sobre', '{"hero_title": "A MAIOR DISTRIBUIDORA DE GEOSSINTÉTICOS DO BRASIL", "history_text": "<p>Qualidade que protege hoje. Confiança que permanece no futuro.</p>", "image_1":"", "image_2":""}'::jsonb),
     ('servicos', 'Serviços', '{"title": "Nossos Serviços Especiais", "description": "Soluções completas para...", "services": []}'::jsonb),
     ('construcao-civil', 'Construção Civil', '{"hero_title": "Soluções em Construção Civil", "hero_subtitle": "Inovação e resistência", "description": "Telas, Proteções de Obra, etc..."}'::jsonb),
     ('geossinteticos', 'Geossintéticos', '{"hero_title": "Geossintéticos de Alta Performance", "hero_subtitle": "Durabilidade Extrema", "description": "Mantas, Geogrelhas, Tubos..."}'::jsonb),
