@@ -167,9 +167,9 @@ export default async function AboutPage() {
           <div className="order-2 lg:order-1">
             <div className="aspect-video rounded-xl overflow-hidden grayscale brightness-75 border border-primary/20 relative">
               <Image
-                alt="Team working"
+                alt="Nossa Cultura e Código de Ética - Santa Marta"
                 className="object-cover"
-                src="https://picsum.photos/seed/team-working/800/600"
+                src="/images/sobre-SM.png"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
