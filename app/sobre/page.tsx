@@ -205,59 +205,59 @@ export default async function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold font-industrial uppercase tracking-tight text-white">Diferenciais Competitivos</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-y-16 gap-x-12">
+          <div className="grid md:grid-cols-3 gap-y-20 gap-x-12">
             {/* 1. Expertise Técnica */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">engineering</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">engineering</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Expertise Técnica</h4>
-              <p className="text-slate-400">Somos especialistas no que fazemos</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Expertise Técnica</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Somos especialistas no que fazemos</p>
             </div>
 
             {/* 2. Qualidade Certificada */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">verified</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">verified</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Qualidade Certificada</h4>
-              <p className="text-slate-400">Projetos e materiais fornecidos em conformidade com normas nacionais e internacionais de segurança.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Qualidade Certificada</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Projetos e materiais fornecidos em conformidade com normas nacionais e internacionais de segurança.</p>
             </div>
 
             {/* 3. Localização */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">explore</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">explore</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Localização</h4>
-              <p className="text-slate-400">Estamos perto de você</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Localização</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Estamos perto de você</p>
             </div>
 
             {/* 4. Pronta Entrega */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">local_shipping</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">local_shipping</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Pronta Entrega</h4>
-              <p className="text-slate-400">Material para pronta entrega!</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Pronta Entrega</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Material para pronta entrega!</p>
             </div>
 
             {/* 5. Segurança */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">health_and_safety</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">health_and_safety</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Segurança</h4>
-              <p className="text-slate-400">Segurança levada a sério e em primeiro lugar.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Segurança</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Segurança levada a sério e em primeiro lugar.</p>
             </div>
 
             {/* 6. Foco na solução */}
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border border-primary/30 text-primary mb-2">
-                <span className="material-symbols-outlined text-4xl">handyman</span>
+            <div className="group text-center space-y-4 hover:-translate-y-2 transition-all duration-500">
+              <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border border-primary/20 text-primary mb-4 group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all duration-500 shadow-xl shadow-transparent group-hover:shadow-primary/20">
+                <span className="material-symbols-outlined text-5xl transition-transform duration-500 group-hover:scale-110">handyman</span>
               </div>
-              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider">Foco na solução</h4>
-              <p className="text-slate-400">Ao seu lado do projeto a execução.</p>
+              <h4 className="text-xl font-bold font-industrial text-white uppercase tracking-wider group-hover:text-primary transition-colors duration-500">Foco na solução</h4>
+              <p className="text-slate-400 group-hover:text-slate-300 transition-colors duration-500 px-4">Ao seu lado do projeto a execução.</p>
             </div>
           </div>
         </div>
