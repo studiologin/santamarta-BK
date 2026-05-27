@@ -59,6 +59,7 @@ export function Navbar() {
             </div>
           </div>
 
+          <Link href="/trabalhe-conosco" className={cn("text-xs font-bold uppercase tracking-widest transition-colors hover:text-primary", pathname === "/trabalhe-conosco" ? "text-primary" : "text-slate-300")}>Trabalhe Conosco</Link>
           <Link href="/contato" className={cn("text-xs font-bold uppercase tracking-widest transition-colors hover:text-primary", pathname === "/contato" ? "text-primary" : "text-slate-300")}>Contato</Link>
         </nav>
 
@@ -99,6 +100,7 @@ export function Navbar() {
               { type: "label", name: "Soluções", icon: "widgets" },
               { name: "Construção Civil", href: "/construcao-civil", icon: "architecture", isSub: true },
               { name: "Geossintéticos", href: "/geossinteticos", icon: "layers", isSub: true },
+              { name: "Trabalhe Conosco", href: "/trabalhe-conosco", icon: "work" },
               { name: "Contato", href: "/contato", icon: "mail" },
             ].map((item, i) => {
               if (item.isSub && !isSolutionsOpen) return null;
